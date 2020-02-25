@@ -14,6 +14,12 @@ public class PersonController {
     @Autowired
     private PersonDao personDao;
 
+    /***
+     * 添加方法
+     * @param person
+     * @return
+     */
+
 @PostMapping("/")
     public  String add(@RequestBody Person person){
         try {
